@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+</head>
+<body>
+    <h1>Aplikacja do notatek</h1>
+
+    <div>
+        <h2>Dodaj notatkę</h2>
+        <form id="noteForm">
+            <label for="title">Tytuł:</label>
+            <input type="text" id="title" required>
+            <br>
+            <label for="content">Kontent:</label>
+            <textarea id="content" required></textarea>
+            <br>
+            <label for="color">Kolor:</label>
+            <input type="color" id="color" value="#ffffff">
+            <br>
+            <label for="pin">Przypięcie:</label> 
+            <input type="checkbox" id="pin">
+            <br>
+            <button type="button" onclick="addNote()">Dodaj notatkę</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Zapisane notatki</h2>
+        <div id="notesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

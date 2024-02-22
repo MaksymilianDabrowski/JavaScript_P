@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+<!-- Slider zdjęciowy -->
+<div class="slider-container"> 
+
+    <div class="slider fade">
+      <div class="number">1 / 3</div>
+      <img src="/Lab_02/photos/img1.jpg" style="width:100%">
+      <div class="text">Caption One</div>
+    </div>
+  
+    <div class="slider fade">
+      <div class="number">2 / 3</div>
+      <img src="/Lab_02/photos/img2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="slider fade">
+      <div class="number">3 / 3</div>
+      <img src="/Lab_02/photos/img3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+  <div style="text-align:center">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
